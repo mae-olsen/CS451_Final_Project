@@ -1,6 +1,8 @@
 # CS451_Final_Project
 Final Project for UA Data Science Course
 
+This project is a basic math OCR system that takes a set of single-line math expression images and outputs a LaTeX file and PDF noteset for accessible math note scribing.
+
 The instructions for using this repository and reproducing my results is below. Please keep in mind that you will need to edit hard-coded file and directory path names depending on your local structure. Additionally, parts I-II can be skipped if the intention is to simply use the inference script, as these parts explain how to reproduce the whole pipeline. Skip directly to Part III for inference testing.
 
 
