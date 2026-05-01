@@ -12,7 +12,7 @@ Additionally, parts I-II can be skipped if the intention is to simply use the in
 
 Part I: Data Cleaning, Exploration, and Augmentation
 
-1. Use gen_expressions.py script to generate 10,000 synthetic whiteboard images of randomly placed symbols
+1. Use gen_expressions.py script to generate 10,000 synthetic whiteboard images of randomly placed symbols from kaggle dataset
 This will create synthetic images with corresponding label files that contain all symbol bounding box coordinates with the symbol class.
 3. Run change_labels.py script to mask symbol classes (YOLOv8n model is only to detect symbol or no symbol rather than the symbol type)
 4. Use data_explore.ipynb for exploratory data analysis and 80/20 train/val data splitting
