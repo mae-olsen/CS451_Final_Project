@@ -1,7 +1,7 @@
 # CS451_Final_Project
 Final Project for UA Data Science Course
 
-The instructions for using this repository and reproducing my results is below. Please keep in mind that you will need to edit hard-coded file and directory path names depending on your local structure.
+The instructions for using this repository and reproducing my results is below. Please keep in mind that you will need to edit hard-coded file and directory path names depending on your local structure. Additionally, parts I-x can be skipped if the intention is to simply use the inference script, as these parts explain how to reproduce the whole pipeline.
 
 Part I: Data Cleaning, Exploration, and Augmentation
 The individual symbol images are contained in symbols/extracted_images directory.
@@ -10,3 +10,8 @@ The individual symbol images are contained in symbols/extracted_images directory
 This will create synthetic images with corresponding label files that contain all symbol bounding box coordinates with the symbol class.
 3. Run change_labels.py script to mask symbol classes (YOLOv8n model is only to detect symbol or no symbol rather than the symbol type)
 4. Use data_explore.ipynb for exploratory data analysis and 80/20 train/val data splitting
+
+Part II: Model Training
+
+1. To fine-tune the YOLOv8n model, create .yaml file, like yolo.yaml with your directory structure and run yolo_tuning.ipynb. This notebook also produces some visualizations based on results.
+2. For HPO and training for the CNN and logistic regression models, use class_models.ipynb. This file references int_mapping.json, which maps integers to LaTeX symbol labels.
