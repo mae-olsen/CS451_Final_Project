@@ -3,12 +3,14 @@ Final Project for UA Data Science Course
 
 This project is a basic math OCR system that takes a set of single-line math expression images and outputs a LaTeX file and PDF noteset for accessible math note scribing.
 
-The instructions for using this repository and reproducing my results is below. Please keep in mind that you will need to edit hard-coded file and directory path names depending on your local structure. Additionally, parts I-II can be skipped if the intention is to simply use the inference script, as these parts explain how to reproduce the whole pipeline. Skip directly to Part III for inference testing.
+The instructions for using this repository and reproducing my results is below. Please keep in mind that you will need to edit hard-coded file and directory path names depending on your local structure. The symbol image data used was from **https://www.kaggle.com/datasets/xainano/handwrittenmathsymbols** and the following classes were retained for training and testing:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, (, ), -, +, =, neq, times, X, y, f, div, foward_slash
+
+Additionally, parts I-II can be skipped if the intention is to simply use the inference script, as these parts explain how to reproduce the whole pipeline. Skip directly to Part III for inference testing.
 
 
 Part I: Data Cleaning, Exploration, and Augmentation
-
-The individual symbol images are contained in symbols/extracted_images directory.
 
 1. Use gen_expressions.py script to generate 10,000 synthetic whiteboard images of randomly placed symbols
 This will create synthetic images with corresponding label files that contain all symbol bounding box coordinates with the symbol class.
