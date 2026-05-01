@@ -1,0 +1,15 @@
+# Core numerical + ML
+numpy>=1.24
+torch>=2.0
+
+# Computer vision
+opencv-python>=4.8
+
+# YOLO/Ultralytics
+ultralytics>=8.0
+
+# Scikit-learn (needing for loading LR pickle model)
+scikit-learn>=1.3
+
+# Jupyter display utilities
+ipython>=8.0
