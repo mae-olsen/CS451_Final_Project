@@ -13,5 +13,7 @@ This will create synthetic images with corresponding label files that contain al
 
 Part II: Model Training
 
-1. To fine-tune the YOLOv8n model, create .yaml file, like yolo.yaml with your directory structure and run yolo_tuning.ipynb. This notebook also produces some visualizations based on results.
+1. To fine-tune the YOLOv8n model, create .yaml file, like yolo.yaml with your directory structure and run yolo_tuning.ipynb. This notebook also produces some visualizations based on results. The best.pt model weights file will be saved after fine-tuning the model.
 2. For HPO and training for the CNN and logistic regression models, use class_models.ipynb. This file references int_mapping.json, which maps integers to LaTeX symbol labels.
+ a. The logistic regression model weights will be saved as lr_model.pkl
+ b. The CNN model weights will be saved as cnn_model_weights.pth
