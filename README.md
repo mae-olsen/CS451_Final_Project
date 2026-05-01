@@ -23,6 +23,7 @@ Part II: Model Training
 
 
 **Part III: Inference**
+The requirements.txt file shows libraries you will need to run inference. Also note that to use pdflatex in inference.py, a local LaTeX distribution must be installed and ensure pdflatex is on PATH.
 1. Make sure to have best.pt, lr_model.pkl, and cnn_model_weights.pth in your directory
 2. Create a subdirectory of images you would like to use for inference. The script will iterate through each image and output that as a new line in the LaTeX file. Note: only one expression line per image. The models can only handle that format currently. expression.jpg is an example of an image that can be used for inference.
 3. Run **python3 inference.py --img_dir <img_dir_name>**. This will output results in terminal as well as output.tex and output.pdf.
