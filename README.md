@@ -22,7 +22,7 @@ Part II: Model Training
 3. For model validation, use full_pipeline.py script
 
 
-Part III: Inference*
+**Part III: Inference**
 1. Make sure to have best.pt, lr_model.pkl, and cnn_model_weights.pth in your directory
 2. Create a subdirectory of images you would like to use for inference. The script will iterate through each image and output that as a new line in the LaTeX file. Note: only one expression line per image. The models can only handle that format currently.
 3. Run **python3 inference.py --img_dir <img_dir_name>**. This will output results in terminal as well as output.tex and output.pdf.
